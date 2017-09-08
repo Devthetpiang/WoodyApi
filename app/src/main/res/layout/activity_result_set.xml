@@ -1,0 +1,74 @@
+
+        <ScrollView android:id="@+id/ScrollView01_set"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <!-- Add content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/rlMessageOnlySet">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMessageOnlySet"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="loading..."
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:layout_marginBottom="@dimen/control_far_margin"
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    />
+
+                <Button
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:id="@+id/btnOkResSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Go to Partners"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_primary"
+                    android:background="@color/blue_500" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rlResultChartSet">
+                <TextView
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:text=""
+                    android:gravity="left"
+                    android:id="@+id/tvQuestionRes_Set"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvQuestionRes_Set"
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_marginBottom="@dimen/control_far_margin"
+                    android:orientation="vertical"
+                    android:id="@+id/llPieCharts">
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>

@@ -1,0 +1,149 @@
+
+        <ScrollView android:id="@+id/ScrollView01"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <!-- Add content here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/flWithImage">
+                <TextView
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:text="loading..."
+                    android:layout_gravity="left"
+                    android:id="@+id/tvQuestionRes"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/iVPostPicRes"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="right"
+                    android:contentDescription="ivPostPicRes"
+                    android:layout_margin="@dimen/control_close_margin"
+                    android:layout_toEndOf="@+id/tvQuestionRes"
+                    android:layout_toRightOf="@+id/tvQuestionRes"
+                    android:src="@android:drawable/ic_menu_gallery" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/flWithoutImage">
+                <TextView
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:text=""
+                    android:gravity="left"
+                    android:id="@+id/tvQuestionRes2"/>
+                </FrameLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pie_segment_container_height"
+                android:visibility="invisible"
+                android:layout_above="@+id/tVCommentRes"
+                android:layout_gravity="left" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/glButtons"
+                android:visibility="invisible"
+                >
+
+                <ImageView
+                    android:id="@+id/iBCommentRs"
+                    android:scaleType="fitCenter"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_comment"
+                    android:background="@drawable/ic_comment"
+                    android:contentDescription="@string/info_button_description"
+                    android:layout_marginBottom="@dimen/control_close_margin"
+                    android:layout_marginLeft="@dimen/control_far_margin"
+                    android:layout_marginRight="@dimen/control_far_margin"
+                    />
+
+                <ImageView
+                    android:id="@+id/iBShareRes"
+                    android:scaleType="fitCenter"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_shareandroid"
+                    android:background="@drawable/ic_shareandroid"
+                    android:contentDescription="@string/info_button_description"
+                    android:layout_marginBottom="@dimen/control_close_margin"
+                    android:layout_marginLeft="@dimen/control_far_margin"
+                    android:layout_marginRight="@dimen/control_far_margin"
+                    />
+                <ImageView
+                    android:id="@+id/iBLikeRes"
+                    android:scaleType="fitCenter"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_like"
+                    android:background="@drawable/ic_like"
+                    android:contentDescription="@string/star_button_description"
+                    android:layout_marginBottom="@dimen/control_close_margin"
+                    android:layout_marginLeft="@dimen/control_far_margin"
+                    android:layout_marginRight="@dimen/control_far_margin"
+                    />
+                <ImageView
+                    android:id="@+id/iBCreatedBy"
+                    android:scaleType="fitCenter"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="@string/info_button_description"
+                    android:layout_marginBottom="@dimen/control_close_margin"
+                    android:layout_marginLeft="@dimen/control_far_margin"
+                    android:layout_marginRight="@dimen/control_far_margin"
+                    />
+
+            </GridLayout>
+
+            <Button
+                android:layout_marginTop="@dimen/control_margin"
+                android:id="@+id/btnOkRes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next Question"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:visibility="invisible"
+                android:background="@color/blue_500" />
+
+
+            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/lvCommentsRes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:minHeight="@dimen/item_card_height"
+                android:paddingTop="16dp" />
+
+
+        </LinearLayout>
+    </ScrollView>

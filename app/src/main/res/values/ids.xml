@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="question_id"/>
+    <item type="id" name="radio_id"/>
+    <item type="id" name="extra_id"/>
+</resources>

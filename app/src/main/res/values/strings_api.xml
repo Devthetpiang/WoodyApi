@@ -1,0 +1,22 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="registration_api">api/registration/something/</string>
+
+    <string name="reg_code_000">000</string>
+    <string name="reg_code_001_mobile_no_invalid">001</string>
+    <string name="reg_code_002_duplicate_user">002</string>
+    <string name="reg_code_003">003</string>
+    <string name="reg_code_004">004</string>
+    <string name="reg_code_005">005</string>
+    <string name="reg_code_006_age_under_16">006</string>
+    <string name="reg_code_007_password_length">007</string>
+    <string name="reg_code_008_userName_phone">008</string>
+    <string name="reg_code_010_success">010</string>
+
+    <string name="ask_code_002_category">002</string>
+    <string name="ask_code_003_validation">003</string>
+    <string name="ask_code_004_overall_error">004</string>
+    <string name="ask_code_000_overall_error">000</string>
+
+
+</resources>

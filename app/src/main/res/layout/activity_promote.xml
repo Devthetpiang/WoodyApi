@@ -1,0 +1,24 @@
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/llMessagePromote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="16dp"
+                android:theme="@style/AppTheme"
+                tools:contex=".PromoActivity">
+
+            </LinearLayout>
+        </ScrollView>

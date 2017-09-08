@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/control_margin">
+
+    <ImageView
+        android:id="@+id/notiIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginStart="23dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/notiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:gravity="top"
+        android:paddingRight="@dimen/control_close_margin"
+        android:text="no text"
+        android:textColor="@color/grey_800"
+        android:textSize="@dimen/abc_text_size_button_material"
+        android:layout_alignParentTop="true"
+        android:paddingTop="@dimen/control_close_margin"
+        android:layout_toRightOf="@+id/notiIcon"
+        android:layout_toEndOf="@+id/notiIcon" />
+
+    <TextView
+        android:id="@+id/notiTime"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="bottom"
+        android:paddingRight="40dp"
+        android:text="no text time"
+        android:textColor="@color/grey_800"
+        android:textSize="@dimen/text_size_small"
+        android:layout_toRightOf="@+id/notiIcon"
+        android:layout_toEndOf="@+id/notiIcon"
+        android:layout_below="@+id/notiTitle"
+        android:layout_marginTop="@dimen/control_close_margin"
+        android:layout_marginBottom="@dimen/control_close_margin"
+
+        />
+
+</RelativeLayout>

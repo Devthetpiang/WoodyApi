@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Xavey Pte Ltd.
+  -->
+
+<resources>
+
+    <string name="app_name">Mell</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_action_skip">Skip Question</string>
+    <string name="menu_action_flag">Report Inappropriate</string>
+
+    <string name="title_activity_my">Details</string>
+    <string name="hint">Search Tag</string>
+    <string name="photo_description">Photo</string>
+    <string name="info_button_description">Comment</string>
+    <string name="star_button_description">Favourite this question</string>
+
+    <!--<string name="api_endpoint">http://192.168.1.143:3300/</string>>-->
+    <!--<string name="api_endpoint">http://128.199.174.248:3300/</string>-->
+    <string name="api_endpoint">http://woody.xavey.com:3300/</string>
+    <string name="facebook_app_id">715337371899870</string>
+    <string name="api_endpoint_profile">api/covers/profile/</string>
+    <string name="api_endpoint_post">api/covers/post/</string>
+    <string name="api_endpoint_reward">api/covers/reward/</string>
+
+    <string name="app_download">http://mellapp.com/#download</string>
+    <string name="app_download_label">Guess what... new version is available. Do you want to download now?</string>
+
+    <string name="app_share_link">http://www.mellapp.com/questions/</string>
+    <string name="app_legal_link_pp">http://www.mellapp.com/legal.html#privacy</string>
+    <string name="app_legal_link_toc">http://www.mellapp.com/legal.html#toc</string>
+    <string name="app_legal_link_redeem">http://www.mellapp.com/reward/</string>
+    <string name="app_share_msg">Get Mell App and share your opinions! </string>
+
+    <string name="api_grant_type">password</string>
+    <string name="api_client_id">android</string>
+    <string name="api_client_secret">d3886954-e971-42a4-b97f-5343dcb1c424</string>
+
+    <string name="api_error_unauthorized">unauthorized</string>
+    <string name="api_error_notfound">notfound</string>
+    <string name="api_error_servererror">servererror</string>
+    <string name="api_error_offline">offline</string>
+    <string name="api_error_offline_message">Network connection error</string>
+    <string name="api_error_generic_message">Something went wrong!</string>
+    <string name="api_enroll_notenough_message">You do not have enough Mell Point (MP).</string>
+
+    <string name="title_page_ask">Ask a question</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--<string name="message_noquestion">No more questions! Want to ask something interesting?</string>-->
+
+    <string name="message_noquestion">သူငယ်ချင်း ဖြေစရာမကျန်တော့ဘူး။ တစ်ခုခုမေးကြည့်ပါလား။</string>
+    <string name="message_previously_answered">ပါ၀င်ဖြေဆိုပေးခဲ့မှုကိုကျေးဇူးတင်ပါတယ်၊ အခြားစိတ်၀င်စားစရာ မေးခွန်းတွေကိုလည်း Partner Pageမှ တဆင့်ရှာဖွေနိုင်ပါတယ်။</string>
+    <string name="message_vote_submitted">သင့်ရဲ့ဖြေဆိုမှုကိုကျေးဇူးတင်ပါတယ်</string>
+    <string name="message_vote_not_submitted">ဖြေဆိုမှု မပြီးမြောက်ပါ</string>
+    <string name="message_connection_error">အင်တာနက်ချိတ်မှု အဆင်မပြေပါ</string>
+    <string name="message_invitation">Mell App ကိုသုံးၿပီးအေတြးအျမင္ေတြဖလွယ္ၾကရေအာင္ http://www.mellapp.com</string>
+
+    <string name="title_luckydraw">ကံစမ်းမယ်</string>
+    <string name="tour_1_title">မင်္ဂလာပါ</string>
+    <string name="tour_1_msg_1">Mell App မှ ကြိုဆိုပါတယ်...</string>
+    <string name="tour_1_msg_2">တန်ဖိုးရှိတဲ့ သင့်အမြင်တွေကို မျှ​ဝေရင်း ဆုငွေနဲ့ လက်ဆောင်တွေ ရရှိနိုင်မယ့် social opinion app လေးပါ။</string>
+    <string name="tour_2_title">မေးမယ်</string>
+    <string name="tour_2_msg">Mell App မှာ ကိုယ်စိတ်ဝင်စားတဲ့ အကြောင်းအရာလေးတွေကို လွယ်လွယ်ကူကူ မေးမြန်းနိုင်တယ်။</string>
+    <string name="tour_3_title">ဖြေမယ်</string>
+    <string name="tour_3_msg">တခြား Mell user တွေ မေးထားတဲ့ မေးခွန်းလေးတွေမှာ ကိုယ့်အမြင်တွေကို လွတ်လွတ်လပ်လပ် မျှဝေနိုင်တယ်။</string>
+    <string name="tour_4_title">ဆွေးနွေးမယ်</string>
+    <string name="tour_4_msg">အဖြေတွေမှာ comment ပေးပြီး အမြင်တူသူတွေ ကွဲလွဲသူတွေနဲ့ လွတ်လပ်စွာ ဆွေးနွေးနိုင်တယ်။</string>
+    <string name="tour_5_title">ကံစမ်းမယ်</string>
+    <string name="tour_5_msg">Partner တွေရဲ့ အထူးမေးခွန်းလေးတွေမှာ ဝင်ရောက် ဖြေဆိုပေးရင်တော့ သတ်မှတ်ထားတဲ့ ကံစမ်းမဲနဲ့ လက်ဆောင်ပစ္စည်းတွေ ရနိုင်တယ်။</string>
+
+    <string name="tour_1_title_zg">မဂၤလာပါ</string>
+    <string name="tour_1_msg_1_zg">Mell App မွ ႀကိဳဆိုပါတယ္...</string>
+    <string name="tour_1_msg_2_zg">တန္ဖိုးရွိတဲ့ သင့္အျမင္ေတြကို မၽွ​ေဝရင္း ဆုေငြနဲ႔ လက္ေဆာင္ေတြ ရရွိနိုင္မယ့္ social opinion app ေလးပါ။</string>
+    <string name="tour_2_title_zg">ေမးမယ္</string>
+    <string name="tour_2_msg_zg">Mell App မွာ ကိုယ္စိတ္ဝင္စားတဲ့ အေၾကာင္းအရာေလးေတြကို လြယ္လြယ္ကူကူ ေမးျမန္းနိုင္တယ္။</string>
+    <string name="tour_3_title_zg">ေျဖမယ္</string>
+    <string name="tour_3_msg_zg">တျခား Mell user ေတြ ေမးထားတဲ့ ေမးခြန္းေလးေတြမွာ ကိုယ့္အျမင္ေတြကို လြတ္လြတ္လပ္လပ္ မၽွေဝနိုင္တယ္။</string>
+    <string name="tour_4_title_zg"> ေဆြးေႏြးမယ္</string>
+    <string name="tour_4_msg_zg">အေျဖေတြမွာ comment ေပးၿပီး အျမင္တူသူေတြ ကြဲလြဲသူေတြနဲ႔ လြတ္လပ္စြာ ေဆြးေႏြးနိုင္တယ္။</string>
+    <string name="tour_5_title_zg">ကံစမ္းမယ္</string>
+    <string name="tour_5_msg_zg">Partner ေတြရဲ့ အထူးေမးခြန္းေလးေတြမွာ ဝင္ေရာက္ ေျဖဆိုေပးရင္ေတာ့ သတ္မွတ္ထားတဲ့ ကံစမ္းမဲနဲ႔ လက္ေဆာင္ပစၥည္းေတြ ရနိုင္တယ္။</string>
+
+    <string name="dialog_report_message">Do you want to report this question for review?</string>
+
+    <string name="ic_follow">Follow</string>
+    <string name="ic_following">Following</string>
+
+    <string name="api_result_notfound">No record found</string>
+    <string name="api_result_servererror">Please try again.</string>
+
+    <string name="about_title">Mell</string>
+    <string name="about_tag">#your opinion matters!</string>
+    <string name="about_text">Mell App ဆိုတာကတော့ ပြည်တွင်းပြည်ပက မြန်မာ community တွေအတွက် ရည်ရွယ်ပြီး ထုတ်လုပ်ထားတဲ့ သူ့အမြင်  ကိုယ့်အမြင်တွေကို ပွင့်ပွင့်လင်းလင်း မျှဝေမေးမြန်းနိုင်မယ့် social poll app လေးပဲ ဖြစ်ပါတယ်။ </string>
+    <string name="about_contact">သိလို အကြံပြုလိုသည်များရှိပါက contact@xavey.com သို့ email ပို့ပြီးမေးနိုင်ပါသည်။</string>
+
+    <string name="menu_search_hint">Search Mellers</string>
+
+    <string name="button_label_submit">Submit</string>
+    <string name="button_label_ask">Ask</string>
+    <string name="button_label_ans">Answer</string>
+    <string name="button_label_reg">အကောင့်ဖွင့်မယ်</string>
+    <string name="button_label_comment">မှတ်ချက်ပေးမယ်</string>
+    <string name="button_label_loading">loading...</string>
+    <string name="button_label_done">Done</string>
+    <string name="button_label_invite">Send via SMS</string>
+
+    <string name="education_title">ပညာရေး</string>
+    <string name="current_city">နေထိုင်သည့်တိုင်းဒေသ</string>
+    <string name="current_town">မြို့နယ်</string>
+
+    <string name="spinner_income_title">Select Income Range</string>
+    <string name="spinner_edu_title">Select Education</string>
+    <string name="spinner_city_title">Select Current City</string>
+    <string name="spinner_town_title">Select Current Town</string>
+
+    <string name="category_dialog_title">Choose Categories</string>
+
+    <string name="Noti_OwnPostComment">OwnPostComment</string>
+    <string name="Noti_FavPostComment">FavPostComment</string>
+    <string name="Noti_ComPostComment">ComPostComment</string>
+    <string name="Noti_FollowUserPost">FollowUserPost</string>
+    <string name="Noti_OwnPostVote">OwnPostVote</string>
+    <string name="Noti_FavPostVote">FavPostVote</string>
+    <string name="Noti_WebLink">WebLink</string>
+    <string name="Noti_InviteJoined">InviteJoined</string>
+    <string name="Noti_FacebookInvite">FacebookInvite</string>
+    <string name="Noti_FacebookConnect">FacebookConnect</string>
+    <string name="Noti_RewardRedeem">RewardRedeem</string>
+    <string name="Noti_CompleteProfile">CompleteProfile</string>
+
+    <string name="Noti_OwnPostComment_Label">New comments in your question</string>
+    <string name="Noti_FavPostComment_Label">New comments in your favourite question</string>
+    <string name="Noti_ComPostComment_Label">New comments for post</string>
+    <string name="Noti_FollowUserPost_Label">New question posted from a person you have followed</string>
+    <string name="Noti_OwnPostVote_Label">People voted for your post</string>
+    <string name="Noti_FavPostVote_Label">People voted for your favourite question</string>
+    <string name="Noti_InviteJoined_Label">One of your contacts becomes a Meller</string>
+    <string name="Noti_FacebookInvite_Label">Let your Facebook friends join the Mell</string>
+    <string name="Noti_FacebookConnect_Label">Connect with your Facebook account and invite friends</string>
+    <string name="Noti_RewardRedeem_Label">Be rewarded more, join a reward program</string>
+    <string name="Noti_CompleteProfile_Label">Complete your profile and become a real Meller</string>
+    <string name="action_fb_invite">ဖတ်ခေါ်လိုက်မယ်</string>
+    <string-array name="nav_drawer_items">
+
+        <item>ဖြေမယ်</item>
+        <item>မေးမယ်</item>
+        <item>ကံစမ်းမယ်</item>
+        <item>ဖိတ်ခေါ်မယ်</item>
+        <item>Partners</item>
+        <item>Promoted Qs</item>
+        <item>Settings</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_answer</item>
+        <item>@drawable/ic_ask</item>
+        <item>@drawable/ic_reward</item>
+        <item>@drawable/ic_invite</item>
+        <item>@drawable/ic_business</item>
+        <item>@drawable/ic_promoted</item>
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_about</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_reg">Registration</string>
+    <string name="title_activity_ask">Ask</string>
+    <string name="title_activity_main">Mell</string>
+    <string name="title_activity_answer">Answer</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_result">Result</string>
+    <string name="title_activity_reward">Reward</string>
+    <string name="title_activity_ask_share">Share your question</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_invite">Invite friends</string>
+    <string name="title_activity_partner">Partners</string>
+    <string name="title_activity_about">About Mell</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="title_activity_promote">Promoted Qs</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="gcm_project_number">637974133896</string>
+
+    <string name="data_users_business">100</string>
+    <string name="data_users_celebrity">95</string>
+    <string name="data_users_premium">90</string>
+    <string name="data_users_internal">85</string>
+
+    <string name="fb_applink_url">https://fb.me/742888042478136</string>
+    <string name="fb_applink_image">http://mellapp.com/image/mell_fb_backgroud.png</string>
+
+</resources>

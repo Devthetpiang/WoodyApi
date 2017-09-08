@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dip" >
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gVcategoryDia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/control_margin"
+            android:id="@+id/btnOKCatDia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OK"
+            style="?android:textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:background="@color/blue_500"/>
+</LinearLayout>

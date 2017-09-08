@@ -1,0 +1,223 @@
+
+
+        <ScrollView android:id="@+id/ScrollView01"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:theme="@style/AppTheme"
+                tools:context=".EditProfileActivity"
+                android:weightSum="1"
+                android:background="@color/grey_50">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:paddingBottom="@dimen/activity_vertical_margin">
+
+                        <ImageView
+                            android:layout_width="122dp"
+                            android:layout_height="174dp"
+                            android:id="@+id/iVProfilePr"
+                            android:src="@drawable/ic_profile"
+                            android:scaleType="fitCenter"
+                            android:contentDescription="ivProfilePic"/>
+                        <Button
+                            android:id="@+id/click"
+                            android:layout_marginTop="@dimen/control_far_margin"
+                            android:layout_marginLeft="@dimen/control_far_margin"
+                            android:layout_below="@+id/iVProfilePr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:onClick="click"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/iVProfilePr"
+                            android:layout_toRightOf="@+id/iVProfilePr"
+                            android:text="Change Picture"/>
+                    </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name" />
+
+                <EditText
+                    android:id="@+id/eTFullNameReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="30"
+                    android:singleLine="true"
+                    android:hint=""
+                    android:textColor="@color/primary_dark_material_dark" >
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gender" />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvGender"
+                    android:orientation="horizontal"
+                    android:checkedButton="@+id/sound" >
+
+                    <RadioButton
+                        android:layout_marginRight="@dimen/control_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rBFemaleReg"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:layout_marginLeft="@dimen/control_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rBMaleReg"
+                        android:text="Male" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth" />
+
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:datePickerMode="spinner"
+                    android:id="@+id/dPDoBReg"
+                    android:layout_gravity="center"
+                    android:calendarViewShown="false"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No."
+                    android:textColor="#000" />
+                <EditText
+                    android:id="@+id/eTMobileReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/primary_dark_material_dark">
+                </EditText>
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name" />
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:textColor="@color/primary_dark_material_dark" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N.R.I.C"/>
+                <EditText
+                    android:id="@+id/nrcNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+                    android:singleLine="true"
+                    android:textColor="@color/primary_dark_material_dark"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/control_far_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Current City"/>
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_city_title"/>
+
+
+            <Spinner android:id="@+id/township_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_town_title"
+                />
+                
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_far_margin"
+                android:text="Income"
+                />
+
+            <Spinner
+                android:id="@+id/income_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_income_title"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/control_far_margin"
+                android:text="Education"/>
+            <Spinner
+                android:id="@+id/edu_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_edu_title"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/control_far_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tVMessageReg"
+                android:text="" />
+            <Button
+                android:layout_marginTop="@dimen/control_margin"
+                android:id="@+id/btnOk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/button_label_done"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:background="@color/blue_500" />
+
+
+            </LinearLayout>
+        </ScrollView>

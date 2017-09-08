@@ -1,0 +1,29 @@
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_email">username</string>
+    <string name="prompt_password">password</string>
+    <string name="prompt_new_password">new password</string>
+    <string name="prompt_confirm_password">confirm password</string>
+    <string name="prompt_phone">phone</string>
+    <string name="prompt_token">token</string>
+    <string name="action_register">အကောင့်အသစ်ဖွင့်မယ်</string>
+    <string name="action_forget"><u>Forget password</u></string>
+    <string name="action_forgot">Get token</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_sign_in"><u>ဝင်မယ်</u></string>
+    <string name="action_invite"><u>Invite</u></string>
+    <string name="action_cancel">Cancel</string>
+
+    <string name="subtitle_reset_form">Please check SMS inbox for password reset token.</string>
+    <string name="subtitle_forget_form">Please enter user name and phone no to request a reset token.</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Please try again</string>
+    <string name="error_field_required">This field is required</string>
+
+    <array name="fb_read_permission">
+        <item>user_friends</item>
+        <item>public_profile</item>
+    </array>
+</resources>

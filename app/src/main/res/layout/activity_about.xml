@@ -1,0 +1,104 @@
+
+
+        <ScrollView android:id="@+id/ScrollView01"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/LinearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|left"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:theme="@style/AppTheme"
+                tools:context=".AboutActivity"
+                style="#F4EAD5">
+
+                <TextView
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/abc_text_size_large_material"
+                    android:text="@string/about_title" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="@string/about_tag" />
+                <TextView
+                    android:id="@+id/tvTextAb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:layout_marginBottom="@dimen/control_margin"
+                    android:textSize="@dimen/abc_text_size_body_2_material"
+                    android:text="@string/about_text" />
+
+                <TextView
+                    android:id="@+id/tvContactAb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/control_margin"
+                    android:textSize="@dimen/abc_text_size_body_2_material"
+                    android:text="@string/about_contact" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvVersionAb"
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:textSize="@dimen/abc_text_size_button_material"
+                    android:gravity="right"
+                    android:text="version code 1.10" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Copyright © 2015, Xavey Myanmar Co., Ltd." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tvPP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/control_far_margin"
+                        android:layout_marginBottom="@dimen/control_far_margin"
+                        android:layout_marginRight="@dimen/control_far_margin"
+                        android:textSize="@dimen/abc_text_size_button_material"
+                        android:gravity="right"
+                        android:textColor="@color/blue_500"
+                        android:text="Privacy Policy"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/tvTOC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/control_far_margin"
+                        android:layout_marginBottom="@dimen/control_far_margin"
+                        android:textSize="@dimen/abc_text_size_button_material"
+                        android:gravity="right"
+                        android:textColor="@color/blue_500"
+                        android:text="Terms and Conditions"
+                        android:clickable="true"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>

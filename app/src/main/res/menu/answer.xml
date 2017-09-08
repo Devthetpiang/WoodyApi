@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (C) 2015 Xavey Pte Ltd.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AnswerActivity">
+    <group
+        android:id="@+id/answer_menu_group">
+    <item
+        android:id="@+id/action_skip_question"
+        android:orderInCategory="100"
+        android:title="@string/menu_action_skip"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_flag_report"
+        android:orderInCategory="100"
+        android:title="@string/menu_action_flag"
+        app:showAsAction="never" />
+    </group>
+    <group android:id="@+id/main_menu_group">
+        <item
+            android:id="@+id/menu_search"
+            android:title="@string/title_activity_search"
+            android:icon="@drawable/ic_search"
+            appcompat:actionViewClass="android.support.v7.widget.SearchView"
+            appcompat:showAsAction="always"/>
+        <item android:id="@+id/menu_profile"
+            android:title="Notifications"
+            android:icon="@drawable/ic_invite_people"
+            app:showAsAction="always"/>
+        <item android:id="@+id/menu_notifications"
+            android:title="Notifications"
+            android:icon="@drawable/ic_menu_notifications"
+            app:showAsAction="always"/>
+    </group>
+</menu>

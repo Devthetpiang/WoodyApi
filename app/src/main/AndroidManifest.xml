@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--     Copyright (C) 2015 Xavey Pte Ltd. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xavey.woody" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <permission android:name="com.xavey.woody.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.xavey.woody.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:name=".WoodyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data android:name="android.app.default_searchable" android:value=".activity.SearchActivity" />
+        <intent-filter> <action android:name="android.intent.action.SEARCH" /> </intent-filter>
+
+        <activity android:name=".activity.OnboardingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/title_activity_main" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"
+                    android:host="mellapp.com"
+                    android:pathPrefix="/questions/" />
+                <data android:scheme="http"
+                    android:host="www.mellapp.com"
+                    android:pathPrefix="/questions/" />
+                <data android:scheme="http"
+                    android:host="woody.xavey.com"
+                    android:pathPrefix="/questions/" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.xavey.woody.ApiKey"
+            android:value="d3886954-e971-42a4-b97f-5343dcb1c424" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/title_activity_reg"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.RewardActivity"
+            android:label="@string/title_activity_reward"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ResultSetActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AskActivity"
+            android:label="@string/title_activity_ask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.AskShareActivity"
+            android:label="@string/title_activity_ask_share"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_setting">
+        </activity>
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AnswerActivity"
+            android:label="@string/title_activity_answer"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.AnswerSetActivity"
+            android:label="@string/title_activity_answer"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.InviteActivity"
+            android:label="@string/title_activity_invite"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PartnerActivity"
+            android:label="@string/title_activity_partner"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.PromoteActivity"
+            android:label="@string/title_activity_promote"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <!-- GA -->
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <!-- end GA -->
+
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.xavey.woody" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".gcm.GcmMessageHandler" />
+
+    </application>
+
+</manifest>

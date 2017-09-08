@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/control_margin"    >
+
+    <ImageView
+        android:id="@+id/ivCommentorCI"
+        android:scaleType="fitCenter"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/info_button_description"
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_marginRight="@dimen/control_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+        <TextView android:id="@+id/tVCommentorCI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/amber_700"
+            android:clickable="true"
+            android:text="xuser"
+            android:textSize="15dp"
+            android:layout_weight="0"
+            android:layout_toEndOf="@+id/ivCommentorCI"
+            android:layout_toRightOf="@+id/ivCommentorCI"
+             />
+
+        <TextView android:id="@+id/tVCommentDateCI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="5 days ago"
+            android:layout_weight="0"
+            android:layout_toEndOf="@+id/tVCommentorCI"
+            android:layout_toRightOf="@+id/tVCommentorCI"
+            android:layout_alignBaseline="@+id/tVCommentorCI"
+            android:layout_marginLeft="@dimen/control_far_margin"
+            />
+
+        <TextView android:id="@+id/tVCommentCI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My first comment!"
+            android:textSize="16dp"
+            android:layout_weight="0"
+            android:paddingTop="5dp"
+            android:layout_below="@+id/tVCommentorCI"
+            android:layout_alignLeft="@+id/tVCommentorCI"
+            android:layout_alignStart="@+id/tVCommentorCI"
+            android:paddingBottom="5dp" />
+ </RelativeLayout>
+

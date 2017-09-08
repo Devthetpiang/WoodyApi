@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="fill" android:background="@drawable/list_item_background">
+
+    <ImageView
+        android:id="@+id/ivContactRefI"
+        android:scaleType="fitCenter"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/info_button_description"
+        android:layout_marginRight="@dimen/control_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="2dp"
+        />
+
+    <TextView android:id="@+id/tVContactNameRefI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/control_margin"
+        android:layout_marginTop="@dimen/control_close_margin"
+        android:layout_alignBaseline="@+id/ivContactRefI"
+        android:layout_toRightOf="@id/ivContactRefI"
+        android:layout_toEndOf="@id/ivContactRefI"
+        android:text="loading..."
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <TextView android:id="@+id/tVContactNoRefI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="loading..."
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/control_margin"
+        android:layout_marginBottom="@dimen/control_margin"
+        android:layout_below="@+id/tVContactNameRefI"
+        android:layout_toRightOf="@id/ivContactRefI"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp" />
+
+
+</RelativeLayout>

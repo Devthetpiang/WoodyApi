@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="fill" android:background="@drawable/list_item_background_without_arrow">
+
+    <ImageView
+        android:id="@+id/iVFB"
+        android:scaleType="fitCenter"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/info_button_description"
+        android:layout_marginRight="@dimen/control_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/control_close_margin"
+        android:paddingTop="2dp"
+        />
+
+    <TextView android:id="@+id/tVFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/control_margin"
+        android:layout_alignBaseline="@+id/iVFB"
+        android:layout_toRightOf="@id/iVFB"
+        android:layout_toEndOf="@id/iVFB"
+        android:text="loading..."
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:paddingBottom="5dp"
+        />
+
+    <CheckBox android:id="@+id/cKFB" style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

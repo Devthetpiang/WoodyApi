@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FBB36B</color>
+    <color name="primary_dark">#FF7900</color>
+    <color name="accent">#D9FFFFFF</color>
+    <color name="text_primary">#D9FFFFFF</color>
+    <color name="text_secondary">#D9000000</color>
+    <color name="photo_tint">#88101010</color>
+    <color name="session_photo_scrim">#6000</color>
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <color name="navdrawer_background">#fff</color>
+
+    <color name="ans_em_1">@color/yellow_500</color>
+    <color name="ans_em_6">@color/yellow_800</color>
+    <color name="ans_em_2">@color/green_500</color>
+    <color name="ans_em_7">@color/green_800</color>
+    <color name="ans_em_3">@color/red_500</color>
+    <color name="ans_em_8">@color/red_800</color>
+    <color name="ans_em_4">@color/light_blue_500</color>
+    <color name="ans_em_9">@color/light_blue_800</color>
+    <color name="ans_em_5">@color/deep_purple_500</color>
+    <color name="ans_em_10">@color/deep_purple_800</color>
+
+    <color name="gg_aoi">#69D2E7</color>
+    <color name="gg_cleanpond">#A7DBD8</color>
+    <color name="gg_beach_storm">#E0E4CC</color>
+    <color name="gg_giantgoldfish">#F38630</color>
+    <color name="gg_unrealpills">#FA6900</color>
+
+    <color name="hp_aoi">#69D2E7</color>
+    <color name="hp_carrotcake">#ECCD78</color>
+    <color name="hp_mighty">#556270</color>
+    <color name="hp_sugar">#FE4365</color>
+    <color name="hp_terra">#E8DDCB</color>
+
+</resources>

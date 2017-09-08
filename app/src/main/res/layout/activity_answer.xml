@@ -1,0 +1,106 @@
+        <ScrollView android:id="@+id/ScrollView01"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <!-- Add content here -->
+        <LinearLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:theme="@style/AppTheme"
+            tools:context=".AnswerActivity"
+            android:weightSum="1"
+            android:background="@color/grey_50">
+
+            <TextView
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_menu_material"
+                android:text="Requesting a question for you..."
+                android:id="@+id/tvAsker"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:text=""
+                android:textAlignment="center"
+                android:clickable="true"
+                android:id="@+id/tvQuestionAns"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/iVPostPicAns"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:contentDescription="ivPostPicAns"
+                android:layout_margin="@dimen/control_margin"
+                android:visibility="invisible"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <RadioGroup
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rGAnswerGroupAns"
+                android:orientation="vertical"
+                android:layout_gravity="left">
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_marginBottom="@dimen/control_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tVCategoryAns"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="@dimen/control_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tVMessageAns"
+                android:text="" />
+
+            <Button
+                android:layout_marginTop="@dimen/control_margin"
+                android:id="@+id/btnOkAns"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_label_ans"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:background="@color/blue_500" />
+
+            <Button
+                android:layout_marginTop="@dimen/control_margin"
+                android:id="@+id/btnCreateQAns"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:text="@string/button_label_ask"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:background="@color/blue_500" />
+
+        </LinearLayout>
+        </ScrollView>

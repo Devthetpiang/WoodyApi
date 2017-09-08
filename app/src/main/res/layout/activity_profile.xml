@@ -1,0 +1,141 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/AppTheme"
+    tools:context=".ProfileActivity">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/control_far_margin"
+                    android:layout_height="150dp">
+
+                    <LinearLayout
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="left"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:gravity="top|center"
+                            android:id="@+id/iVProfilePr"
+                            android:src="@drawable/ic_profile"
+                            android:scaleType="fitCenter"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="ivProfilePic" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/amber_800"
+                            android:textSize="10sp"
+                            android:id="@+id/tvPoint"
+                            android:text="Loading..." />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="@color/green_500"
+                            android:textSize="15sp"
+                            android:id="@+id/tvRedeem"
+                            android:text="@string/title_luckydraw"
+                            android:visibility="invisible"
+                            android:clickable="true"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/control_far_margin"
+                        >
+                                <TextView
+                                    android:layout_margin="@dimen/control_close_margin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_row="0"
+                                    android:layout_column="1"
+                                    android:text="Loading..."
+                                    android:textSize="20sp"
+                                    android:id="@+id/tvFullName"
+                                    android:layout_rowWeight="0" />
+
+                                <TextView
+                                    android:layout_margin="@dimen/control_close_margin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_row="1"
+                                    android:layout_column="1"
+                                    android:textColor="@color/amber_800"
+                                    android:textSize="15sp"
+                                    android:id="@+id/tvUserName"
+                                    android:text="Loading..."
+                                    android:layout_rowWeight="0" />
+
+                                <TextView
+                                    android:layout_margin="@dimen/control_close_margin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_row="2"
+                                    android:layout_column="1"
+                                    android:text="Loading..."
+                                    android:textSize="10sp"
+                                    android:id="@+id/tvJoined"
+                                    android:layout_rowWeight="0" />
+
+                                <Button
+                                    android:id="@+id/iVEdit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/control_close_margin"
+                                    android:layout_column="1"
+                                    android:layout_row="3"
+                                    android:gravity="center"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="left"
+                                    android:text="Edit Profile"
+                                    android:textAllCaps="false"
+                                    android:visibility="invisible"
+                                    />
+                    </LinearLayout>
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/bLikePr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/control_margin"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="Follow"
+                android:textAllCaps="false"
+                android:background="@drawable/background_button_inactive"/>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tlProfileList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MyCustomTabLayout"
+                app:tabMode="scrollable" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpProfileList"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+        </LinearLayout>

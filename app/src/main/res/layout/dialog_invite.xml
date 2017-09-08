@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="Phone No." />
+
+    <EditText
+        android:layout_marginBottom="@dimen/control_margin"
+        android:singleLine="true"
+        android:lines="1"
+        android:minLines="1"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/etPhoneInvDai"
+        android:maxLength="15"
+        android:hint="Enter your friend phone no.">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_marginTop="@dimen/control_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="Message" />
+    <EditText
+        android:layout_marginBottom="@dimen/control_margin"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:minLines="2"
+        android:gravity="center"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/etMessageInvDai"
+        android:maxLength="150"
+        android:text="@string/message_invitation">
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:layout_marginTop="@dimen/control_margin"
+        android:id="@+id/btnOKInvDai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_label_invite"
+        style="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:background="@color/blue_500"/>
+
+    </LinearLayout>
+
